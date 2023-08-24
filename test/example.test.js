@@ -11,7 +11,7 @@ describe('API Integration Tests', () => {
     try {
     const response = await axios.post(`${API_URL}/books`, {
       title: 'Book 1',
-      isbn: 'ABCD',
+      isbn: '978-3-16-148410-1',
     });
     expect(response.status).toBe(200);
 
@@ -40,7 +40,7 @@ describe('API Integration Tests', () => {
     try {
     const response = await axios.post(`${API_URL}/books`, {
       title: 'Book 2',
-      isbn: 'EFGH',
+      isbn: '978-3-16-148410-2',
     });
     expect(response.status).toBe(200);
 
